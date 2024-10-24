@@ -1,4 +1,5 @@
 from cal import add,sub
+from area import multi
 
 
 def main():
@@ -7,6 +8,7 @@ def main():
           select
           1. add
           2. sub
+          3. area
           """)
     
     user_input = int(input("select"))
@@ -19,6 +21,8 @@ def main():
         result = add(a,b)
     elif user_input ==2:
         result = sub(a,b)
+    elif user_input==3:
+        result = multi(a,b)
         
     print(f"result: {result}")
         
